@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="site.css">
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <title>About | Bhagesh Khatri</title>
+
+    
+</head>
+
+<body class="text-center">
+
+    <h7>
+        <font size=30><b><a href="" class="typewrite" data-period="2000" data-type='[ " mY L!fE = C0dE . . . " ]'>
+          <span class="wrap"></span>
+        </a></font></b>
+      </h7> 
+        
+    <!--<div class="pic">
+        <img src="pic.JPG" alt="error" style="width:20%" size=750x align=left width="300" height="  500" hspace="100" vspace= " 105">
+    </div>-->
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+                <div class="inner" style="margin-top: 5px;">
+                    <a href="http://bhageshkhatri.ml/">
+                        <font face="Lucida Handwriting"><h3 class="masthead-brand">Bhagesh Khatri</h3></font>
+                    </a>
+                    <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="updates.html">Updates</a>
+                        <a class="nav-link active" href="about.html">About</a>
+                        
+                    </nav>
+                </div>
+            </header>
+
+            <main role="main" class="container">
+
+                <div class="site-container">
+                    <font face="Times New Roman"><h1>About</h1></font>
+                    <p class="lead" style="text-align: left;"><font face="Lucida Fax" size=3.5>
+                        I’m a passionate and dedicated Computer Science Engineering Undergraduate who strive to write
+                        efficient
+                        and beautiful code. I want to develop smart products that can transform the lives of millions of
+                        people
+                        and bring change for the better. Enjoy studying data structures and algorithms, operating
+                        system,
+                        also like to play with huge amount of Data. I’m proficient in Java, C++, C and Python.
+                        <br>
+                        <br>
+                        Listening to music is a good way for me to beat stress. I Like to make new friends and to maintain
+                        maintain healthy relationship with people. Besides computer
+                        programming,
+                        I’m
+                        also interested in wildlife, politics and playing games.
+                    </p>
+
+                    <hr style="margin-top: 10x;">
+
+                    <p class="lead" style="text-align: left;">
+                        Mail me at bhageshjkhatri@gmail.com <br></a>
+                    </font>
+                
+                     
+                      <style>
+                        body {
+                            text-align: right;
+                            color:white;
+                            padding-top:3px;
+                            padding-bottom: 0px;
+                            background-color:black;
+                            
+                          }
+                          
+                          * { color:white; text-decoration: dashed;}
+                        </style>
+
+                        <script>
+                            var TxtType = function(el, toRotate, period) {
+                        this.toRotate = toRotate;
+                        this.el = el;
+                        this.loopNum = 0;
+                        this.period = parseInt(period, 10) || 2000;
+                        this.txt = '';
+                        this.tick();
+                        this.isDeleting = false;
+                    
+                        };
+                
+                        TxtType.prototype.tick = function() {
+                        var i = this.loopNum % this.toRotate.length;
+                        var fullTxt = this.toRotate[i];
+                
+                        if (this.isDeleting) {
+                        this.txt = fullTxt.substring(0, this.txt.length - 1);
+                        } else {
+                        this.txt = fullTxt.substring(0, this.txt.length + 1);
+                        }
+                
+                        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+                
+                        var that = this;
+                        var delta = 200 - Math.random() * 100;
+                
+                        if (this.isDeleting) { delta /= 2; }
+                
+                        if (!this.isDeleting && this.txt === fullTxt) {
+                        delta = this.period;
+                        this.isDeleting = true;
+                        } else if (this.isDeleting && this.txt === '') {
+                        this.isDeleting = false;
+                        this.loopNum++;
+                        delta = 500;
+                        }
+                
+                        setTimeout(function() {
+                        that.tick();
+                        }, delta);
+                    };
+                
+                    window.onload = function() {
+                        var elements = document.getElementsByClassName('typewrite');
+                        for (var i=0; i<elements.length; i++) {
+                            var toRotate = elements[i].getAttribute('data-type');
+                            var period = elements[i].getAttribute('data-period');
+                            if (toRotate) {
+                              new TxtType(elements[i], JSON.parse(toRotate), period);
+                            }
+                        }
+                        // INJECT CSS
+                        var css = document.createElement("style");
+                        css.type = "text/css";
+                        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                        document.body.appendChild(css);
+                    };
+                        </script>
+
+
+
+                    </p>
+                </div>
+
+            </main><!-- /.container -->
+        </div>
+
+</body>
+
+</html>
